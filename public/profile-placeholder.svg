@@ -1,0 +1,6 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#111"/>
+  <circle cx="200" cy="160" r="80" fill="#222"/>
+  <ellipse cx="200" cy="340" rx="120" ry="80" fill="#222"/>
+  <text x="200" y="390" text-anchor="middle" fill="#444" font-size="14" font-family="system-ui">Add profile.jpg to /public</text>
+</svg>
