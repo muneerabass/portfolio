@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Brain, Layers, Palette } from "lucide-react";
+import { Smartphone, Brain, Layers, Server } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { personal, interests, stats } from "@/lib/data";
 
@@ -9,7 +9,7 @@ const iconMap = {
   smartphone: Smartphone,
   brain: Brain,
   layers: Layers,
-  palette: Palette,
+  server: Server,
 };
 
 export default function AboutView() {

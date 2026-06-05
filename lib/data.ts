@@ -47,10 +47,10 @@ export const interests = [
     icon: "layers",
   },
   {
-    title: "UI/UX Design",
+    title: "DevOps",
     description:
-      "Converting Figma designs into polished, responsive mobile interfaces with attention to detail.",
-    icon: "palette",
+      "Deploying and managing apps with AWS, Docker, CI/CD pipelines, and cloud infrastructure for reliable production systems.",
+    icon: "server",
   },
 ];
 

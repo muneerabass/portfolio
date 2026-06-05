@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Muneer Abbas | React Native Developer",
+  title: "Muneer Abass",
   description:
     "React Native Developer specializing in building scalable mobile applications and modern digital experiences.",
   keywords: [
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://muneerabass.dev",
-    title: "Muneer Abbas | React Native Developer",
+    title: "Muneer Abass",
     description:
-      "React Native Developer specializing in building scalable mobile applications and modern digital experiences.",
+      "Mobile Developer specializing in building scalable mobile applications and modern digital experiences.",
     siteName: personal.name,
     images: [
       {
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muneer Abbas | React Native Developer",
+    title: "Muneer Abass",
     description:
-      "React Native Developer specializing in building scalable mobile applications and modern digital experiences.",
+      "Mobile Developer specializing in building scalable mobile applications and modern digital experiences.",
     images: [personal.profileImage],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "Person",
     name: personal.name,
-    jobTitle: "React Native Developer",
+    jobTitle: "Mobile App Developer",
     email: personal.email,
     url: "https://muneerabass.dev",
     image: personal.profileImage,
