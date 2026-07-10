@@ -7,7 +7,7 @@ export const personal = {
   email: "muneer.abbas9595@gmail.com",
   phone: "+91 8825045094",
   github: "https://github.com/Muneerabbas",
-  linkedin: "https://www.linkedin.com/in/muneer-abass-67a095285/",
+  linkedin: "https://www.linkedin.com/in/muneerabass",
   whatsapp: "https://wa.me/918825045094",
   resume: "/assets/resume/MuneerAbass_Resume.pdf",
   profileImage:
