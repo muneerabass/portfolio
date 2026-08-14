@@ -30,11 +30,11 @@ export default function ProjectsSection() {
               transition={{ duration: 0.6, ease: REVEAL_EASE, delay: i * 0.08 }}
               className="group -mx-3 block rounded-xl border-b border-border px-3 py-6 transition-colors hover:bg-white/[0.03]"
             >
-              <div className="flex items-start gap-5">
+              <div className="flex items-start gap-3 sm:gap-5">
                 {/* Left media for non-mobile projects */}
                 {!isMobile &&
                   (project.thumbnail ? (
-                    <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded-xl bg-surface-elevated">
+                    <div className="relative h-14 w-20 shrink-0 overflow-hidden rounded-xl bg-surface-elevated sm:h-16 sm:w-24">
                       <Image
                         src={project.thumbnail}
                         alt={project.name}
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
                   ))}
 
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-2xl font-semibold leading-tight text-white">
+                  <h3 className="max-w-full break-words text-xl font-semibold leading-tight text-white [overflow-wrap:anywhere] sm:text-2xl">
                     {project.name}
                   </h3>
                   <p className="text-[15px] text-accent">{project.subtitle}</p>
