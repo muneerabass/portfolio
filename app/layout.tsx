@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { personal } from "@/lib/data";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Muneer Abass",
+  title: "Muneer Abbas- Full-Stack & Mobile Developer",
   description:
-    "React Native Developer specializing in building scalable mobile applications and modern digital experiences.",
+    "Full-Stack & Mobile Software Engineer building production web and mobile apps with React Native, SwiftUI, Next.js, Go and Node.js.",
   keywords: [
-    "Muneer Abass",
     "Muneer Abbas",
-    "React Native Developer",
-    "Mobile App Developer",
+    "Muneer Abass",
     "Software Engineer",
+    "Full-Stack Developer",
+    "React Native Developer",
+    "iOS Developer",
     "Pune",
     "PICT",
     "Next.js",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://muneerabass.dev",
-    title: "Muneer Abass",
+    title: "Muneer Abbas- Full-Stack & Mobile Developer",
     description:
-      "Mobile Developer specializing in building scalable mobile applications and modern digital experiences.",
+      "Full-Stack & Mobile Software Engineer building production web and mobile apps.",
     siteName: personal.name,
     images: [
       {
@@ -45,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muneer Abass",
+    title: "Muneer Abbas- Full-Stack & Mobile Developer",
     description:
-      "Mobile Developer specializing in building scalable mobile applications and modern digital experiences.",
+      "Full-Stack & Mobile Software Engineer building production web and mobile apps.",
     images: [personal.profileImage],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -58,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "Person",
     name: personal.name,
-    jobTitle: "Mobile App Developer",
+    jobTitle: "Full-Stack & Mobile Developer",
     email: personal.email,
     url: "https://muneerabass.dev",
     image: personal.profileImage,
@@ -70,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en" className={`${geistSans.variable} scroll-smooth`}>
+    <html lang="en" className={`${poppins.variable} scroll-smooth`}>
       <head>
         <script
           type="application/ld+json"

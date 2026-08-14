@@ -1,8 +1,11 @@
 export const personal = {
-  name: "Muneer Abass",
-  title: "React Native Developer",
-  badge: "Mobile Developer",
-  tagline: "Building mobile experiences that people actually enjoy using.",
+  name: "Muneer Abbas",
+  role: { top: "FULL-STACK MOBILE", bottom: "DEVELOPER" },
+  title: "Full-Stack & Mobile Developer",
+  badge: "Full-Stack & Mobile Developer",
+  tagline: "A Developer who ships production web and mobile products.",
+  heroDescription:
+    "Computer Engineering student and Full-Stack / Mobile Developer experienced in building production web and mobile applications with React Native, SwiftUI, Next.js, Go, and Node.js. Founding Software Engineer - published and monetized iOS apps on the App Store and built platforms serving 300+ daily active users.",
   location: "Pune, India",
   email: "muneer.abbas9595@gmail.com",
   phone: "+91 8825045094",
@@ -13,247 +16,206 @@ export const personal = {
   profileImage:
     "https://res.cloudinary.com/divexu9ll/image/upload/f_auto,q_auto/WhatsApp_Image_2026-05-26_at_15.55.08_ghfhmp",
   summary:
-    "Computer Engineering student at PICT with hands-on experience in full-stack React Native mobile development. Hackathon winner with a track record of shipping real-world applications. Currently working as a Mobile App Developer at Pianalytix, building AI-powered mobile products used in production.",
-  about: [
-    "I'm a 2nd year Computer Engineering student at Pune Institute of Computer Technology (PICT) with a 9.0 CGPA, passionate about building mobile applications that solve real problems. My journey in software development started with curiosity and has evolved into a focused pursuit of creating scalable, user-friendly mobile experiences.",
-    "Currently working as a Mobile App Developer at Pianalytix, I specialize in React Native development with expertise in AI integration, cross-platform mobile apps, and modern development practices. I've published apps on both the App Store and Play Store, and won multiple hackathons including Pulzion and TechRush.",
-  ],
+    "Computer Engineering student and Full-Stack / Mobile Software Engineer experienced in building production web and mobile applications with React Native, SwiftUI, Next.js, Go, and Node.js. Founding Software Engineer. Published and monetized iOS apps on the App Store and built platforms serving 300+ daily active users.",
 };
 
 export const stats = [
-  { value: "2+", label: "Years Learning" },
-  { value: "3", label: "Apps Published" },
-  { value: "6+", label: "Projects Built" },
-  { value: "2", label: "Internships" },
+  { value: "+300", label: "DAILY ACTIVE USERS" },
+  { value: "+2", label: "iOS APPS PUBLISHED" },
+  { value: "+3", label: "HACKATHON AWARDS" },
 ];
 
-export const interests = [
+export const capabilities = [
   {
-    title: "Mobile Development",
-    description:
-      "Building cross-platform apps with React Native and Expo that deliver native performance.",
-    icon: "smartphone",
-  },
-  {
-    title: "AI Integration",
-    description:
-      "Integrating AI capabilities like speech-to-text, image generation, and intelligent processing into mobile apps.",
-    icon: "brain",
-  },
-  {
-    title: "Full Stack Development",
-    description:
-      "Creating end-to-end solutions with React, Next.js, Node.js, and modern cloud infrastructure.",
+    title: "PRODUCTION WEB & MOBILE APPS",
+    subtitle: "Building and shipping real products, not just demos.",
     icon: "layers",
+    variant: "orange" as const,
   },
   {
-    title: "DevOps",
-    description:
-      "Deploying and managing apps with AWS, Docker, CI/CD pipelines, and cloud infrastructure for reliable production systems.",
-    icon: "server",
-  },
-];
-
-export const experience = [
-  {
-    company: "Pianalytix",
-    role: "Mobile App Developer",
-    period: "Feb 2026 – Present",
-    type: "Remote",
-    bullets: [
-      "Developed an AI-powered voice notes app using React Native and Supabase, with Deepgram speech-to-text and OpenRouter AI processing.",
-      "Integrated Sentry for error monitoring and PostHog for performance tracking.",
-      "Published VoicenotesLab on the App Store.",
-    ],
-  },
-  {
-    company: "Scizers",
-    role: "React Native Intern",
-    period: "Aug 2025 – Feb 2026",
-    type: "Remote",
-    bullets: [
-      "Developed cross-platform mobile applications using React Native with high code reusability between iOS and Android.",
-      "Built modular UI components and converted Figma designs into responsive mobile interfaces.",
-      "Integrated REST APIs using Axios to fetch and display data efficiently.",
-    ],
+    title: "FULL-STACK PRODUCT DEVELOPMENT",
+    subtitle:
+      "From frontend and APIs to databases, deployment, and everything in between.",
+    icon: "layout",
+    variant: "lime" as const,
   },
 ];
 
 export const projects = [
   {
-    name: "VoicenotesLab",
+    name: "theinterviewroom.in",
+    subtitle: "Full-Stack Web Platform",
+    type: "web" as const,
     description:
-      "AI-powered voice notes mobile app with speech-to-text and intelligent processing. Published on the App Store.",
-    tech: ["React Native", "Supabase", "Deepgram", "OpenRouter", "Sentry"],
-    features: [
-      "Speech-to-text transcription",
-      "AI-powered processing",
-      "App Store published",
-      "Error monitoring",
-    ],
-    live: null,
-    github: null,
-    category: "Main Project" as const,
-    tag: "App Store",
-    appStore: "https://apps.apple.com/in/app/voice-notes-lab-ai-notes/id6760574132",
-    playStore: null,
+      "Built and deployed a knowledge-sharing platform for interview and hackathon experiences, serving 300+ daily active users.",
+    thumbnail: "/assets/projects/theinterviewroom/landing.png",
+    screenshots: [] as string[],
+    href: "https://theinterviewroom.in",
+  },
+  {
+    name: "VoiceNotesLab",
+    subtitle: "AI Voice Notes · iOS",
+    type: "mobile" as const,
+    description:
+      "Full-stack iOS app built with Swift/SwiftUI, Supabase, and RevenueCat- published and monetized on the App Store.",
+    thumbnail: "/assets/projects/voicenoteslab/homescreen.png",
     screenshots: [
       "/assets/projects/voicenoteslab/homescreen.png",
       "/assets/projects/voicenoteslab/aichat2.png",
       "/assets/projects/voicenoteslab/aisummary.png",
+      "/assets/projects/voicenoteslab/folders.png",
     ],
-  },
-  {
-    name: "TheInterviewRoom.in",
-    description:
-      "High-traffic interview prep platform reaching 5K+ monthly visitors and 15K+ monthly views, with AI-powered content generation.",
-    tech: ["Next.js", "Gemini AI", "Groq", "Vercel"],
-    features: [
-      "5K+ monthly visitors",
-      "15K+ monthly views",
-      "Gemini AI integration",
-      "Groq integration",
-      "Deployed on Vercel",
-    ],
-    live: "https://theinterviewroom.in",
-    github: null,
-    category: "Mini Project" as const,
-    tag: "Live · 5K+ visitors/mo",
-    appStore: null,
-    playStore: null,
-    screenshots: [
-      "/assets/projects/theinterviewroom/landing.png",
-      "/assets/projects/theinterviewroom/experience.png",
-      "/assets/projects/theinterviewroom/postform.png",
-    ],
+    href: "https://apps.apple.com/in/app/voice-notes-lab-ai-notes/id6760574132",
   },
   {
     name: "AI Product Photo App",
+    subtitle: "AI Photography · iOS",
+    type: "mobile" as const,
     description:
-      "AI-powered product photography mobile app that generates professional studio-quality product images. Published on the App Store.",
-    tech: ["React Native", "Deepgram", "Fal.ai"],
-    features: [
-      "AI product photography",
-      "Studio-quality output",
-      "App Store published",
-      "Mobile-first experience",
-    ],
-    live: null,
-    github: null,
-    category: "Main Project" as const,
-    tag: "App Store",
-    appStore: "https://apps.apple.com/us/app/ai-product-photography-studio/id6759070694",
-    playStore: null,
+      "Full-stack iOS app generating studio-quality product images, published on the App Store with in-app subscriptions.",
+    thumbnail: "/assets/projects/productphotoapp/home.png",
     screenshots: [
       "/assets/projects/productphotoapp/home.png",
       "/assets/projects/productphotoapp/aistudio.png",
       "/assets/projects/productphotoapp/ecommerce.png",
+      "/assets/projects/productphotoapp/imageview.png",
+    ],
+    href: "https://apps.apple.com/us/app/ai-product-photography-studio/id6759070694",
+  },
+  {
+    name: "Meeting Room Booking System",
+    subtitle: "Full-Stack Booking Platform",
+    type: "web" as const,
+    description:
+      "Meeting-room booking system using Go, React and PostgreSQL with server-side validation and booking conflict handling. Containerized with Docker, backend on AWS EC2, frontend on Vercel.",
+    thumbnail: null,
+    screenshots: [] as string[],
+    href: "https://github.com/Muneerabbas/meeting-room-booking",
+  },
+];
+
+export const experience = [
+  {
+    company: "VHSMO",
+    role: "Founding Software Engineer Intern",
+    period: "Feb 2026 – Present",
+    location: "Pune, India",
+    href: null,
+    bullets: [
+      "Built and continuously maintain VHSMO's mobile application and web platform, working across frontend, backend, and product development.",
+      "Developed the mobile app using React Native and the website using Next.js, focusing on UI/UX, performance, and product experience.",
+      "Built and integrated backend APIs using Node.js, Express.js, and Supabase/PostgreSQL, including authentication, orders, payments, and data management.",
+      "Integrated Razorpay for payment processing and implemented checkout, order, and inventory workflows.",
+      "Managed production web infrastructure and deployments using Vercel, while continuously shipping updates and improvements.",
+      "Set up and managed AWS SES for transactional/marketing email infrastructure, including domain authentication and email deliverability.",
     ],
   },
   {
-    name: "RealEdge AI",
-    description:
-      "AI-powered real estate mobile app published on the Play Store. Modern mobile architecture with intelligent features for the real estate market.",
-    tech: ["React Native", "REST API Integrations"],
-    features: [
-      "Play Store published",
-      "AI-powered insights",
-      "Modern mobile architecture",
-      "Real estate focused",
+    company: "Pianalytix",
+    role: "iOS Developer Intern",
+    period: "Feb 2026 – Jun 2026",
+    location: "Remote",
+    href: "https://drive.google.com/file/d/1cMXAvLdlMV-Fb3juDIwUd0KYq7evVf6R/view?usp=sharing",
+    bullets: [
+      "Built and published 2 full-stack iOS apps (ProductPhotoApp and VoiceNotesLab) to the App Store using Swift/SwiftUI.",
+      "Integrated Supabase for database, storage, authentication, and Edge Functions, with RevenueCat for in-app purchases and subscriptions.",
+      "Implemented API integrations, user authentication, and production-ready app workflows across frontend and backend services.",
+      "Managed iOS builds, testing, and releases through Xcode, TestFlight, and App Store Connect.",
     ],
-    live: null,
-    github: null,
-    category: "Main Project" as const,
-    tag: "App Store · Play Store",
-    appStore: "https://apps.apple.com/in/app/realedge-ai/id6450746244",
-    playStore: "https://play.google.com/store/apps/details?id=com.realedgetech.app&hl=en",
-    screenshots: [
-      "/assets/projects/realedgeai/unnamed.png",
-      "/assets/projects/realedgeai/unnamed-2.png",
-      "/assets/projects/realedgeai/unnamed-3.png",
+  },
+  {
+    company: "Scizers",
+    role: "React Native Developer Intern",
+    period: "Aug 2025 – Feb 2026",
+    location: "Remote",
+    href: "https://drive.google.com/file/d/1PKO9hZ1GnDZ0MzhCVWNlxUbABdH6sj1G/view?usp=sharing",
+    bullets: [
+      "Worked on an enterprise-level React Native app, modernizing a 5–6 year-old UI and improving overall UX.",
+      "Refactored the codebase using reusable components and best practices, reducing code by 40%.",
+      "Built filtering and new features using Redux and integrated REST APIs in collaboration with the backend team.",
     ],
   },
 ];
 
-export const skills = {
-  "Mobile Development": ["React Native", "Expo", "React Navigation"],
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
-  Backend: ["Node.js", "Express", "REST APIs", "Axios"],
-  Databases: ["MongoDB", "Firebase", "Supabase", "MySQL"],
-  DevOps: ["AWS", "Docker", "Linux", "Vercel", "GitHub Actions"],
-  Tools: ["Git", "GitHub", "Figma", "VS Code", "Sentry", "PostHog", "Postman", "Maestro"],
-  Languages: ["C++", "Python", "C", "TypeScript"],
-};
-
-export const resumeAchievements = [
+export const skillGroups = [
   {
-    title: "Innovation AITHON Finalist",
-    date: "Apr 2026",
-    description:
-      "Selected as a finalist in a competitive AI hackathon showcasing innovative AI-powered solutions.",
+    title: "Languages & Frameworks",
+    items: [
+      "Go",
+      "C++",
+      "JavaScript",
+      "Swift",
+      "React Native",
+      "SwiftUI",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+    ],
   },
   {
-    title: "Pulzion App Dev Winner",
-    date: "Nov 2025",
-    description:
-      "Won the App Development track at Pulzion, PICT's annual technical festival.",
+    title: "Backend, Cloud & Databases",
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "Supabase",
+      "REST APIs",
+      "Docker",
+      "AWS EC2",
+      "AWS SES",
+      "Nginx",
+    ],
   },
   {
-    title: "TechRush App Dev Winner",
-    date: "Aug 2025",
-    description:
-      "First place in the App Development category at TechRush hackathon.",
-  },
-  {
-    title: "Published Mobile Apps",
-    date: "2025 – Present",
-    description:
-      "VoicenotesLab (App Store), RealEdge AI (Play Store), and AI Product Photo App published on app stores.",
-  },
-  {
-    title: "Production Internship Experience",
-    date: "Aug 2025 – Present",
-    description:
-      "Built and shipped production mobile apps at Pianalytix and Scizers with real users.",
+    title: "Tools & Services",
+    items: [
+      "Git",
+      "GitHub",
+      "Xcode",
+      "App Store Connect",
+      "Redux",
+      "RevenueCat",
+      "Razorpay",
+      "Vercel",
+    ],
   },
 ];
 
 export const achievements = [
   {
-    title: "Published Play Store Apps",
-    description: "RealEdge AI and other mobile apps live on app stores.",
-    icon: "store",
+    title: "Published & Monetized iOS Apps",
+    meta: "App Store",
+    description: "Published and monetized 2 full-stack iOS apps on the App Store.",
   },
   {
-    title: "Internship Experience",
-    description: "Hands-on experience at Pianalytix and Scizers building production apps.",
-    icon: "briefcase",
+    title: "Hackathon Winner- TechRush & Pulzion",
+    meta: "1st Place",
+    description: "Secured 1st place in TECHRUSH and PULZION.",
   },
   {
-    title: "Engineering Student",
-    description: "2nd year B.Tech Computer Engineering at PICT with 9.0 CGPA.",
-    icon: "graduation",
-  },
-  {
-    title: "Hackathon Winner",
-    description: "Won Pulzion App Dev and TechRush App Dev competitions.",
-    icon: "trophy",
+    title: "AltON Top 25 Finalist",
+    meta: "Top 25 / 800+",
+    description: "Selected among the Top 25 out of 800+ participants in AltON.",
   },
 ];
 
-export const education = [
-  {
-    institution: "Pune Institute of Computer Technology",
-    degree: "B.Tech in Computer Engineering",
-    period: "Sep 2024 – Sep 2028",
-    cgpa: "9.0",
-  },
+export const education = {
+  degree: "B.E. in Computer Engineering",
+  institution: "Pune Institute of Computer Technology (PICT)",
+  period: "2024 – 2028",
+  cgpa: "8.86 / 10",
+};
+
+export const contactSubjects = [
+  "Job Opportunity",
+  "Freelance Project",
+  "Collaboration",
+  "Just Saying Hi",
 ];
 
-export const navTabs = [
-  { id: "about", label: "About" },
-  { id: "resume", label: "Resume" },
-  { id: "projects", label: "Projects" },
+export const navItems = [
+  { id: "home", label: "Home", icon: "home" },
+  { id: "projects", label: "Projects", icon: "folder" },
+  { id: "experience", label: "Experience", icon: "briefcase" },
+  { id: "stack", label: "Tech Stack", icon: "wrench" },
+  { id: "contact", label: "Contact", icon: "edit" },
 ] as const;
-
-export type TabId = (typeof navTabs)[number]["id"];
