@@ -202,7 +202,7 @@ export const education = {
   degree: "B.E. in Computer Engineering",
   institution: "Pune Institute of Computer Technology (PICT)",
   period: "2024 – 2028",
-  cgpa: "8.86 / 10",
+  cgpa: "8.86",
 };
 
 export const contactSubjects = [
