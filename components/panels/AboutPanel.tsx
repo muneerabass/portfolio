@@ -30,7 +30,7 @@ export default function AboutPanel() {
       </motion.div>
 
       {/* Stats */}
-      <div className="mt-8 grid grid-cols-3 gap-4">
+      <div className="mt-8 grid grid-cols-3 gap-2.5 sm:gap-4">
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}
@@ -38,10 +38,10 @@ export default function AboutPanel() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, ease: REVEAL_EASE, delay: 0.1 + i * 0.06 }}
-            className="rounded-2xl border border-border bg-surface-elevated p-4 text-center"
+            className="flex flex-col items-center justify-start rounded-2xl border border-border bg-surface-elevated px-2 py-4 text-center sm:px-4"
           >
-            <p className="text-2xl font-bold text-white sm:text-3xl">{stat.value}</p>
-            <p className="mt-1 text-[10px] font-medium uppercase leading-tight tracking-wide text-muted">
+            <p className="text-xl font-bold text-white sm:text-3xl">{stat.value}</p>
+            <p className="mt-1.5 text-[10px] font-medium uppercase leading-tight tracking-wide text-muted sm:text-[11px]">
               {stat.label}
             </p>
           </motion.div>
