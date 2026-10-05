@@ -9,7 +9,7 @@ export const personal = {
   location: "Pune, India",
   email: "muneer.abbas9595@gmail.com",
   phone: "+91 8825045094",
-  github: "https://github.com/Muneerabbas",
+  github: "https://github.com/muneerabass",
   linkedin: "https://www.linkedin.com/in/muneerabass",
   whatsapp: "https://wa.me/918825045094",
   resume: "/assets/resume/MuneerAbass_Resume.pdf",
@@ -90,7 +90,7 @@ export const projects = [
       "Meeting-room booking system using Go, React and PostgreSQL with server-side validation and booking conflict handling. Containerized with Docker, backend on AWS EC2, frontend on Vercel.",
     thumbnail: null,
     screenshots: [] as string[],
-    href: "https://github.com/Muneerabbas/meeting-room-booking",
+    href: "https://github.com/muneerabass/meeting-room-booking",
   },
 ];
 
