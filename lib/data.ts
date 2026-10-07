@@ -12,7 +12,7 @@ export const personal = {
   github: "https://github.com/muneerabass",
   linkedin: "https://www.linkedin.com/in/muneerabass",
   whatsapp: "https://wa.me/918825045094",
-  resume: "/assets/resume/MuneerAbass_Resume.pdf",
+  resume: "https://drive.google.com/file/d/1vhzWE-NOCck-2IFxmV1aSdePtgRqTc9b/view?usp=sharing",
   profileImage:
     "https://res.cloudinary.com/divexu9ll/image/upload/f_auto,q_auto/WhatsApp_Image_2026-05-26_at_15.55.08_ghfhmp",
   summary:

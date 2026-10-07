@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Download, ChevronDown } from "lucide-react";
+import { ExternalLink, ChevronDown } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons/SocialIcons";
 import { REVEAL_EASE } from "@/components/Reveal";
 import { personal } from "@/lib/data";
@@ -33,15 +33,16 @@ function Socials() {
   );
 }
 
-function DownloadButton({ className = "" }: { className?: string }) {
+function ViewResumeButton({ className = "" }: { className?: string }) {
   return (
     <a
       href={personal.resume}
-      download
+      target="_blank"
+      rel="noopener noreferrer"
       className={`flex w-full items-center justify-center gap-2 rounded-xl bg-accent py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-soft ${className}`}
     >
-      <Download size={17} />
-      Download Resume
+      <ExternalLink size={17} />
+      View Resume
     </a>
   );
 }
@@ -101,7 +102,7 @@ export default function ProfileCard() {
                   {personal.tagline}
                 </p>
                 <Socials />
-                <DownloadButton />
+                <ViewResumeButton />
               </div>
             </motion.div>
           )}
@@ -152,8 +153,8 @@ export default function ProfileCard() {
           <Socials />
         </div>
 
-        {/* Download Resume */}
-        <DownloadButton className="relative z-10 mt-6" />
+        {/* View Resume */}
+        <ViewResumeButton className="relative z-10 mt-6" />
       </div>
     </div>
   );

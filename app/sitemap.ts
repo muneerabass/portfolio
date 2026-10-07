@@ -13,11 +13,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       images: [absoluteUrl(personal.profileImage), ...projectImages],
     },
-    {
-      url: absoluteUrl(personal.resume),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
   ];
 }
